@@ -1,0 +1,296 @@
+{
+    "battle": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string",
+                "description": "id is of type string",
+                "tag": "Tag for id",
+                "required": false
+            },
+            "name": {
+                "type": "string",
+                "description": "name is of type string",
+                "tag": "Tag for name",
+                "required": false
+            },
+            "orientation": {
+                "type": "string",
+                "description": "orientation is of type string",
+                "tag": "Tag for orientation",
+                "required": false
+            },
+            "settings": {
+                "type": "object",
+                "properties": {
+                    "minParticipants": {
+                        "type": "integer",
+                        "description": "minParticipants is of type integer",
+                        "tag": "Tag for minParticipants",
+                        "required": false
+                    },
+                    "maxParticipants": {
+                        "type": "integer",
+                        "description": "maxParticipants is of type integer",
+                        "tag": "Tag for maxParticipants",
+                        "required": false
+                    },
+                    "battleType": {
+                        "type": "string",
+                        "description": "battleType is of type string",
+                        "tag": "Tag for battleType",
+                        "required": false
+                    },
+                    "wagerType": {
+                        "type": "string",
+                        "description": "wagerType is of type string",
+                        "tag": "Tag for wagerType",
+                        "required": false
+                    },
+                    "countdown": {
+                        "type": "integer",
+                        "description": "countdown is of type integer",
+                        "tag": "Tag for countdown",
+                        "required": false
+                    },
+                    "duration": {
+                        "type": "integer",
+                        "description": "duration is of type integer",
+                        "tag": "Tag for duration",
+                        "required": false
+                    },
+                    "archetype": {
+                        "type": "object",
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "description": "name is of type string",
+                                "tag": "Tag for name",
+                                "required": false
+                            },
+                            "iconId": {
+                                "type": "string",
+                                "description": "iconId is of type string",
+                                "tag": "Tag for iconId",
+                                "required": false
+                            }
+                        },
+                        "description": "archetype is of type object",
+                        "tag": "Tag for archetype",
+                        "required": false
+                    }
+                },
+                "description": "settings is of type object",
+                "tag": "Tag for settings",
+                "required": false
+            },
+            "status": {
+                "type": "string",
+                "description": "status is of type string",
+                "tag": "Tag for status",
+                "required": false
+            },
+            "creationTime": {
+                "type": "integer",
+                "description": "creationTime is of type integer",
+                "tag": "Tag for creationTime",
+                "required": false
+            },
+            "startTime": {
+                "type": "integer",
+                "description": "startTime is of type integer",
+                "tag": "Tag for startTime",
+                "required": false
+            },
+            "endTime": {
+                "type": "integer",
+                "description": "endTime is of type integer",
+                "tag": "Tag for endTime",
+                "required": false
+            },
+            "creator": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "id is of type string",
+                        "tag": "Tag for id",
+                        "required": false
+                    },
+                    "nickname": {
+                        "type": "string",
+                        "description": "nickname is of type string",
+                        "tag": "Tag for nickname",
+                        "required": false
+                    },
+                    "title": {
+                        "type": "string",
+                        "description": "title is of type string",
+                        "tag": "Tag for title",
+                        "required": false
+                    },
+                    "accountType": {
+                        "type": "string",
+                        "description": "accountType is of type string",
+                        "tag": "Tag for accountType",
+                        "required": false
+                    },
+                    "countryCode": {
+                        "type": "string",
+                        "description": "countryCode is of type string",
+                        "tag": "Tag for countryCode",
+                        "required": false
+                    },
+                    "orientation": {
+                        "type": "string",
+                        "description": "orientation is of type string",
+                        "tag": "Tag for orientation",
+                        "required": false
+                    }
+                },
+                "description": "creator is of type object",
+                "tag": "Tag for creator",
+                "required": false
+            },
+            "participants": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "user": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string",
+                                    "description": "id is of type string",
+                                    "tag": "Tag for id",
+                                    "required": false
+                                },
+                                "nickname": {
+                                    "type": "string",
+                                    "description": "nickname is of type string",
+                                    "tag": "Tag for nickname",
+                                    "required": false
+                                },
+                                "title": {
+                                    "type": "string",
+                                    "description": "title is of type string",
+                                    "tag": "Tag for title",
+                                    "required": false
+                                },
+                                "accountType": {
+                                    "type": "string",
+                                    "description": "accountType is of type string",
+                                    "tag": "Tag for accountType",
+                                    "required": false
+                                },
+                                "countryCode": {
+                                    "type": "string",
+                                    "description": "countryCode is of type string",
+                                    "tag": "Tag for countryCode",
+                                    "required": false
+                                },
+                                "orientation": {
+                                    "type": "string",
+                                    "description": "orientation is of type string",
+                                    "tag": "Tag for orientation",
+                                    "required": false
+                                }
+                            },
+                            "description": "user is of type object",
+                            "tag": "Tag for user",
+                            "required": false
+                        },
+                        "creator": {
+                            "type": "boolean",
+                            "description": "creator is of type boolean",
+                            "tag": "Tag for creator",
+                            "required": false
+                        },
+                        "ranking": {
+                            "type": "integer",
+                            "description": "ranking is of type integer",
+                            "tag": "Tag for ranking",
+                            "required": false
+                        },
+                        "numberOfTrades": {
+                            "type": "integer",
+                            "description": "numberOfTrades is of type integer",
+                            "tag": "Tag for numberOfTrades",
+                            "required": false
+                        },
+                        "performance": {
+                            "type": "string",
+                            "description": "performance is of type string",
+                            "tag": "Tag for performance",
+                            "required": false
+                        }
+                    }
+                },
+                "description": "participants is of type array",
+                "tag": "Tag for participants",
+                "required": false
+            }
+        },
+        "description": "battle is of type object",
+        "tag": "Tag for battle",
+        "required": false
+    },
+    "joiner": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string",
+                "description": "id is of type string",
+                "tag": "Tag for id",
+                "required": false
+            },
+            "nickname": {
+                "type": "string",
+                "description": "nickname is of type string",
+                "tag": "Tag for nickname",
+                "required": false
+            },
+            "title": {
+                "type": "string",
+                "description": "title is of type string",
+                "tag": "Tag for title",
+                "required": false
+            },
+            "accountType": {
+                "type": "string",
+                "description": "accountType is of type string",
+                "tag": "Tag for accountType",
+                "required": false
+            },
+            "countryCode": {
+                "type": "string",
+                "description": "countryCode is of type string",
+                "tag": "Tag for countryCode",
+                "required": false
+            },
+            "orientation": {
+                "type": "string",
+                "description": "orientation is of type string",
+                "tag": "Tag for orientation",
+                "required": false
+            }
+        },
+        "description": "joiner is of type object",
+        "tag": "Tag for joiner",
+        "required": false
+    },
+    "participantIds": {
+        "type": "enum",
+        "items": {
+            "type": "string",
+            "enum": [
+                "ABCDEFGHIJKLMNOPQRST",
+                "ABCDEFGHIJKLMNOPQRSTUVWXY"
+            ]
+        },
+        "description": "participantIds is of type enum",
+        "tag": "Tag for participantIds",
+        "required": false
+    }
+}

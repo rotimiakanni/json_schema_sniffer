@@ -1,0 +1,94 @@
+{
+    "user": {
+        "type": "object",
+        "properties": {
+            "id": {
+                "type": "string",
+                "description": "id is of type string",
+                "tag": "Tag for id",
+                "required": false
+            },
+            "nickname": {
+                "type": "string",
+                "description": "nickname is of type string",
+                "tag": "Tag for nickname",
+                "required": false
+            },
+            "title": {
+                "type": "string",
+                "description": "title is of type string",
+                "tag": "Tag for title",
+                "required": false
+            },
+            "accountType": {
+                "type": "string",
+                "description": "accountType is of type string",
+                "tag": "Tag for accountType",
+                "required": false
+            },
+            "countryCode": {
+                "type": "string",
+                "description": "countryCode is of type string",
+                "tag": "Tag for countryCode",
+                "required": false
+            },
+            "orientation": {
+                "type": "string",
+                "description": "orientation is of type string",
+                "tag": "Tag for orientation",
+                "required": false
+            }
+        },
+        "description": "user is of type object",
+        "tag": "Tag for user",
+        "required": false
+    },
+    "time": {
+        "type": "integer",
+        "description": "time is of type integer",
+        "tag": "Tag for time",
+        "required": false
+    },
+    "acl": {
+        "type": "array",
+        "items": {
+            "type": "string",
+            "enum": []
+        },
+        "description": "acl is of type array",
+        "tag": "Tag for acl",
+        "required": false
+    },
+    "publicFeed": {
+        "type": "boolean",
+        "description": "publicFeed is of type boolean",
+        "tag": "Tag for publicFeed",
+        "required": false
+    },
+    "internationalCountries": {
+        "type": "enum",
+        "items": {
+            "type": "string",
+            "enum": [
+                "ABCDEFGHIJKLMNOPQRSTUVWXYZA",
+                "ABCDEFGHIJKLMNOPQ",
+                "ABCDEFGHIJKLMNOPQRSTUVW",
+                "ABCDEFGHIJKLMNOPQRSTUVWXY",
+                "ABCDEFGHIJK",
+                "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+                "ABCDEFGHIJKLMNOPQR",
+                "ABCDEFG",
+                "ABCDEFGHIJKLM"
+            ]
+        },
+        "description": "internationalCountries is of type enum",
+        "tag": "Tag for internationalCountries",
+        "required": false
+    },
+    "topTraderFeed": {
+        "type": "boolean",
+        "description": "topTraderFeed is of type boolean",
+        "tag": "Tag for topTraderFeed",
+        "required": false
+    }
+}
