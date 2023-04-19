@@ -5,7 +5,9 @@
 The JSON sniffer is a python tool used to sniff the schema of a JSON file and dump it in a folder within the project.
 
 # Dependency
-python 3x
+- python 3x
+
+Download python from the official website at (https://python.org/)
 
 # Usage
 To execute the program, navigate into the projects main directory and run the following command.
