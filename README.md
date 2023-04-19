@@ -11,7 +11,7 @@ python 3x
 To execute the program, navigate into the projects main directory and run the following command.
 
 ```bash
-python3 main.py <name of json file>
+python3 main.py <name(s) of json file(s)>
 ```
 
 Alternatively you can add the file(s) you want to get schema for as part of command arguments seperated by space
